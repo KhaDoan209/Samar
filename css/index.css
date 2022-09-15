@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body,
+html {
+  color: #636363;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Button CSS */
+button {
+  text-align: center;
+  height: 60px;
+  width: 170px;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  background-size: 200%;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-position: right center;
+  cursor: pointer;
+}
+
+/* Header & Navigation CSS */
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.header__nav {
+  display: flex;
+}
+.header__nav ul {
+  display: flex;
+  list-style: none;
+
+  align-items: center;
+}
+
+.header__nav li {
+  margin-right: 25px;
+}
+
+.header__nav__item {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 500;
+}
+.header__nav i {
+  margin-left: 3px;
+  font-size: 0.5rem;
+}
+
+.header__btn {
+  margin-left: 20px;
+}
+
+.header__nav__item span {
+  display: inline-block;
+  transition: 1s;
+  font-size: 0.9rem;
+}
+
+.header__nav__item:hover {
+  color: #f55f8d;
+}
+
+.header__nav__item:hover span {
+  animation: upToDown 0.5s;
+}
+
+/* Carousel CSS */
+.carousel__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel__left {
+  margin-top: 5%;
+  width: 60%;
+}
+
+.carousel__right {
+  width: 40%;
+}
+
+.title p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+
+.title h2 {
+  font-weight: 800;
+  font-size: 70px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  color: #262626;
+}
+
+.carousel__article p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  width: 70%;
+  color: #636363;
+}
+.carousel__article li {
+  list-style: none;
+  padding: 10px;
+  font-size: 20px;
+}
+.carousel__article i {
+  padding: 10px 10px;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  color: white;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.carousel__article button {
+  margin-top: 5%;
+}
+/* CSS Animation */
+@keyframes upToDown {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
