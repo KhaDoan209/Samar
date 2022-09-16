@@ -1,3 +1,5 @@
+/* Common CSS */
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +15,13 @@ html {
   line-height: 1.6;
 }
 
+.container {
+  width: 65%;
+  margin: auto;
+}
+
 /* Button CSS */
+
 button {
   text-align: center;
   height: 60px;
@@ -39,9 +47,11 @@ button:hover {
 
 /* Header & Navigation CSS */
 
-.container {
-  width: 70%;
-  margin: auto;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__content {
@@ -94,6 +104,14 @@ button:hover {
 }
 
 /* Carousel CSS */
+
+.carousel {
+  padding-top: 180px;
+  background-image: url(../img/pic2.png);
+  background-position: top;
+  background-size: 100%;
+}
+
 .carousel__content {
   display: flex;
   justify-content: space-between;
@@ -108,14 +126,14 @@ button:hover {
   width: 40%;
 }
 
-.title p {
+.subtitle {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 20px;
   color: #f55f8d;
 }
 
-.title h2 {
+.subtitle-2 {
   font-weight: 800;
   font-size: 70px;
   margin-bottom: 20px;
@@ -149,6 +167,149 @@ button:hover {
 .carousel__article button {
   margin-top: 5%;
 }
+
+/* Service */
+
+.service {
+  margin-top: 10%;
+  text-align: center;
+  background-image: url(../img/bg2.png);
+  background-size: cover;
+  background-position: top center;
+}
+
+.service .container {
+  width: 70%;
+  margin: auto;
+}
+
+.service__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service__item {
+  padding: 30px 45px;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  transition: all 0.5s;
+  transform: translateY(0);
+  background-color: white;
+}
+
+.service__item:hover {
+  transform: translateY(-5%);
+}
+
+.service__item img {
+  width: 215px;
+}
+
+.service__item h3 {
+  font-size: 1.5rem;
+  margin-top: 10%;
+}
+
+/* About US */
+
+.aboutUS {
+  padding: 3% 0;
+  background-image: url(../img/bg15.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.about__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.about__left img {
+  width: 100%;
+  border-radius: 0px 100px 100px 0px;
+}
+
+.about__left {
+  position: absolute;
+  left: -17%;
+  width: 60%;
+}
+
+.about__right {
+  width: 50%;
+}
+
+.about__right p:nth-child(2) {
+  font-weight: 300;
+}
+
+.about__right ul {
+  margin-top: 5%;
+  list-style: none;
+  font-weight: 300;
+}
+
+.about__right i {
+  font-size: 16px;
+  padding: 3px 3px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid #f55f8d;
+  color: #f55f8d;
+  font-weight: 700;
+}
+
+.about__btn {
+  padding: 5% 0;
+}
+
+/* Number CSS */
+
+.number {
+  margin: 3% 0;
+  background-image: url(../img/bg14.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.number__content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.number__item {
+  width: 25%;
+}
+
+.number__item i {
+  font-size: 45px;
+  padding: 10px 15px;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  border-radius: 50%;
+  color: white;
+  background-size: 200%;
+  margin-bottom: 15px;
+}
+
+.number__item p:nth-child(2) {
+  font-size: 65px;
+  color: #f55f8d;
+}
+
+.number__item span {
+  font-size: 65px;
+}
+
 /* CSS Animation */
 @keyframes upToDown {
   49% {
