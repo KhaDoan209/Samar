@@ -31,6 +31,9 @@
         <!-- Light Gallery -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/css/lightgallery-bundle.min.css">
 
+        <!-- Swiper  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
         <!-- Main CSS -->
         <link rel="stylesheet" href="./css/index.css" />
     </head>
@@ -412,7 +415,7 @@
                             <h2 class="plan__item__title">
                                 Basic Plan
                             </h2>
-                            <img src="./img/pic1_3.jpg" alt="">
+                            <img src="./img/pic4_1.jpg" alt="">
                             <div class="plan__item__price">
                                 <h1>49$</h1>/<p>Month</p>
                             </div>
@@ -439,6 +442,7 @@
                             <div class="plan__item__price">
                                 <h1>49$</h1>/<p>Month</p>
                             </div>
+                            <div class="plan__line"></div>
                             <ul>
                                 <li><i class="las la-check"></i>Graphic Design</li>
                                 <li><i class="las la-check"></i>Web Design</li>
@@ -461,6 +465,7 @@
                             <div class="plan__item__price">
                                 <h1>49$</h1>/<p>Month</p>
                             </div>
+                            <div class="plan__line"></div>
                             <ul>
                                 <li><i class="las la-check"></i>Graphic Design</li>
                                 <li><i class="las la-check"></i>Web Design</li>
@@ -478,16 +483,86 @@
                 </div>
             </div>
         </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <div class="testimonial__title">
+                    <h3 class="subtitle">Testimonial</h3>
+                    <p class="subtitle-2">What Our Clients Say</p>
+                </div>
+                <div class="testimonial-content">
+                    <!-- Swiper -->
+                    <div class="testimonial-thumbs swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="testimonial-pic">
+                            <img src="./img/pic1_4.jpg" alt="">
+                            <div class="shape-bx"></div>
+                          </div>
+                  
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-pic">
+                            <img src="./img/pic2_3.jpg" alt="">
+                            <div class="shape-bx"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-pic">
+                            <img src="./img/pic3_3.jpg" alt="">
+                            <div class="shape-bx"></div>
+                          </div>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="swiper-container testimonial-comment">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="testimonial-text">
+                            <i class="flaticon-quotation"></i>
+                            <strong class="testimonial-name">Cak Dikin 1</strong>
+                            <p class="testimonial-position text-primary m-b20">CEO & Founder </p>
+                            <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-text">
+                            <i class="flaticon-quotation"></i>
+                            <strong class="testimonial-name">Cak Dikin 2</strong>
+                            <p class="testimonial-position text-primary m-b20">CEO & Founder </p>
+                            <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                          </div>
+                  
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-text">
+                            <i class="flaticon-quotation"></i>
+                            <strong class="testimonial-name">Cak Dikin 3</strong>
+                            <p class="testimonial-position text-primary m-b20">CEO & Founder </p>
+                            <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                          </div>
+                  
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </body>
 
-    <!-- Wow JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-        new WOW().init();
-    </script>
+
+
+
+
+
+
+
+
+
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
@@ -497,6 +572,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- Count Up -->
     <script src="./js/jquery.countup.js"></script>
@@ -527,5 +610,33 @@
 
     </script>
 
+    <!-- Swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var testimonialThumbs = new Swiper(".testimonial-thumbs", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            centeredSlides: true,
+            freeMode: true,
+            autoplay: true,
+            loop: true,
+            speed: 3000
+        });
+        var testimonialContent = new Swiper(".testimonial-comment", {
+            spaceBetween: 10,
+            autoplay: true,
+            loop: true,
+            speed: 3000,
+            thumbs: {
+                swiper: testimonialThumbs
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+
+    </script>
 
 </html>
