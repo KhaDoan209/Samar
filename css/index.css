@@ -153,7 +153,8 @@ header {
   font-size: 20px;
 }
 .carousel__article i {
-  padding: 10px 10px;
+  padding: 6px 6px;
+  align-items: center;
   background-image: linear-gradient(
     to right,
     #f55f8d 0,
@@ -163,6 +164,8 @@ header {
   color: white;
   border-radius: 30px;
   margin-right: 10px;
+  background-size: 200%;
+  font-size: 24px;
 }
 .carousel__article button {
   margin-top: 5%;
@@ -510,9 +513,14 @@ div {
 .portfolio__icon i {
   color: white;
 }
+
 .portfolio__icon {
   transform: translate(20px, -20px);
   transition: all 0.75s;
+}
+
+.portfolio__icon:hover {
+  cursor: pointer;
 }
 
 .portfolio__text {
@@ -546,6 +554,97 @@ div {
   position: absolute;
   bottom: 30px;
   left: 30px;
+}
+
+/* Plan CSS */
+
+.plan {
+  padding: 40px 0;
+  background-image: url(../img/bg16.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.plan .container {
+  width: 60%;
+}
+
+.plan__title {
+  text-align: center;
+}
+
+.plan__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.plan__item__title {
+  font-size: 2rem;
+  color: #262626;
+}
+
+.plan__item__bg img {
+  padding: 10px 0;
+  width: 125px;
+}
+
+.plan__item {
+  text-align: center;
+  padding: 35px 60px;
+  background-color: white;
+  box-shadow: 1px 0 50px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  color: #262626;
+  border-image: 100 round;
+  transition: all 0.5s;
+  border: solid 3px transparent;
+}
+
+.plan__item:hover {
+  border-image: url(../img/br.png) 1 round;
+}
+
+.plan__item__price {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  align-items: baseline;
+}
+
+.plan__item__price h1 {
+  font-size: 50px;
+  color: #f8ae56;
+}
+
+.plan__line {
+  content: "";
+  border-bottom: solid 0.5px #e1e1f0;
+  width: 100%;
+}
+
+.plan__item__bg ul {
+  padding: 20px 0;
+  text-align: left;
+  list-style-type: none;
+}
+.plan__item__bg li {
+  padding: 5px 0;
+  font-weight: 400;
+}
+
+.plan__item__bg i {
+  margin-right: 15px;
+  font-size: 14px;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  background-color: #feeff3;
+  color: #f55f8d;
+  border-radius: 100%;
+  font-weight: bolder;
 }
 
 /* CSS Animation */
