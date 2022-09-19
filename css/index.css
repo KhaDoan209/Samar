@@ -22,7 +22,7 @@ html {
 
 /* Button CSS */
 
-button {
+.btn {
   text-align: center;
   height: 60px;
   width: 170px;
@@ -40,7 +40,7 @@ button {
   transition: all 0.5s;
 }
 
-button:hover {
+.btn:hover {
   background-position: right center;
   cursor: pointer;
 }
