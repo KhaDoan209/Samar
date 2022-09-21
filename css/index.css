@@ -851,14 +851,13 @@ div {
   text-align: center;
 }
 
-.owl-carousel .owl-theme{
+.owl-carousel .owl-theme {
   display: block;
 }
 
-.owl-stage-outer{
+.owl-stage-outer {
   position: relative;
   overflow: hidden;
-
 }
 
 .blog__carousel {
@@ -942,7 +941,7 @@ div {
 }
 
 /* Footer CSS */
-footer::before{
+footer::before {
   content: "";
   background-image: url(../img/pattern2.png);
   background-position: left top;
@@ -953,7 +952,7 @@ footer::before{
   left: 0;
   width: 100%;
   height: 100%;
-  }
+}
 
 footer {
   background-image: url(../img/bg4.png);
@@ -968,7 +967,6 @@ footer {
   position: relative;
 }
 
-
 .footer__top {
   padding: 50px 60px;
   background-color: white;
@@ -977,30 +975,29 @@ footer {
   background-image: url(../img/pattern3.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: space-between;
   color: #262626;
-
+  background-size: 100%;
+  position: relative;
 }
 
 .footer__text,
-.footer__form{
+.footer__form {
   width: 50%;
 }
 
-.footer__text h2{
-font-size: 28px;
+.footer__text h2 {
+  font-size: 28px;
 }
 
-.footer__form form{
+.footer__form form {
   display: flex;
   border-radius: 0.5rem;
   box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
-  
 }
 
-.footer__form input{
+.footer__form input {
   padding: 20px 20px;
   font-size: 15px;
   font-weight: 400;
@@ -1011,74 +1008,83 @@ font-size: 28px;
   transition: all 0.5s;
 }
 
-.footer__form button{
+.footer__form button {
   padding: 20px 35px;
   border-radius: 0 0.5rem 0.5rem 0;
   border: 1px solid transparent;
   outline: 0;
-  background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
   background-size: 200%;
   color: white;
   transition: all 0.5s;
 }
 
-.footer__form input:focus{
-border-color:#f55f8d ;
+.footer__form input:focus {
+  border-color: #f55f8d;
 }
 
-.footer__form button:hover{
+.footer__form button:hover {
   background-position: right center;
   cursor: pointer;
 }
 
-.footer__form button:hover i{
+.footer__form button:hover i {
   animation: moveLeftToRight 0.5s forwards;
   display: inline-block;
 }
 
-.footer__bottom{
+.footer__bottom {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  padding:70px 0;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 70px 0;
   position: relative;
 }
 
-.footer__item{
+.footer__item {
   text-align: left;
 }
 
-.footer__item i{
+.footer__item i {
   font-weight: 700;
   margin-right: 10px;
 }
 
-.footer__contact{
-   list-style: none;
-   line-height: 20px;
-   font-weight: 400;
+.footer__contact {
+  list-style: none;
+  line-height: 20px;
+  font-weight: 400;
 }
-.footer__contact span{
+.footer__contact span {
   font-size: 14px;
-
 }
-.footer__contact li{
+.footer__contact li {
   display: flex;
   padding: 0.5rem 0;
   align-items: center;
 }
 
-.footer__contact i{
+.footer__contact i {
   height: 40px;
   width: 40px;
   line-height: 40px;
   color: white;
-  background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
   text-align: center;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.footer__item h3{
+.footer__item h3 {
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 10px;
@@ -1087,72 +1093,71 @@ border-color:#f55f8d ;
   color: white;
 }
 
-.footer__item li{
+.footer__item li {
   font-size: 16px;
   padding: 0.5rem 0;
 }
 
 .footer__item h3::before,
-.footer__item h3::after{
-  content:"";
-  background: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+.footer__item h3::after {
+  content: "";
+  background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
   position: absolute;
   bottom: 0;
-  left:0;
+  left: 0;
   height: 4px;
   background-size: 200%;
   border-radius: 20px;
 }
 
-.footer__item h3::before{
+.footer__item h3::before {
   width: 15px;
 }
 
-.footer__item h3::after{
+.footer__item h3::after {
   width: 45px;
   left: 20px;
 }
 
-.footer__item ul{
+.footer__item ul {
   list-style: none;
 }
 
-.footer__item a{
+.footer__item a {
   text-decoration: none;
   color: #636363;
   font-size: 16px;
   transition: all 0.5s;
 }
 
-.footer__item a:hover{
+.footer__item a:hover {
   cursor: pointer;
   color: white;
 }
 
-.copyrights{
+.copyrights {
   background: #1f343b;
-  padding:10px 0;
+  padding: 10px 0;
   position: relative;
 }
-.footer__content{
+.footer__content {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.footer__left{
+.footer__left {
   font-size: 14px;
   font-weight: 400;
-  
 }
 
-.footer__left span{
+.footer__left span {
   font-size: 14px;
   font-weight: 400;
   color: #f55f8d;
 }
 
-.footer__right a{
+.footer__right a {
   height: 32px;
   width: 32px;
   line-height: 32px;
@@ -1160,17 +1165,43 @@ border-color:#f55f8d ;
   border-radius: 50px;
   display: inline-block;
   color: white;
-  background-color: rgba(255,255,255,.1);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.5s;
 }
 
-.footer__right i{
+.footer__right i {
   font-size: 14px;
 }
 
-.footer__right a:hover{
-  background-color:#f55f8d;
+.footer__right a:hover {
+  background-color: #f55f8d;
 }
+
+/* Back To Top CSS  */
+.backToTop {
+  color: white;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f55f8d;
+  text-align: center;
+  display: block;
+  position: fixed;
+  box-shadow: -4px 4px 24px -10px #f55f8d;
+  right: 15px;
+  bottom: 15px;
+  z-index: 9;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* CSS Animation */
 @keyframes upToDown {
   49% {
@@ -1199,7 +1230,7 @@ border-color:#f55f8d ;
   }
 }
 
-@keyframes moveLeftToRight{
+@keyframes moveLeftToRight {
   49% {
     transform: translateX(100%);
   }
